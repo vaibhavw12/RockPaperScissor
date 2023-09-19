@@ -1,0 +1,280 @@
+body{
+    background-color: #8cc461;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1em;
+    height: 100vh;
+    width: 100vw;
+ }
+ .box{
+    border: white 3px solid;
+    margin: 100px 400px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 4px;
+    align-items: center;
+    border-radius: 13px;
+ }
+ .text{
+    flex: 1;
+    color: #ffff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 1rem;
+ }
+ .scores{
+    display: flex;
+    margin: 0.5rem 0;
+    text-align: center;
+ }
+ #comp,#user{
+   font-size: 70px;
+   color: rgb(66, 62, 62);
+   font-weight: 700;
+ }
+ .comp{
+    margin-right: 1rem;
+ }
+ .user{
+    margin-right: 1rem;
+ }
+ .score{
+    background: #ffffff;
+    font-weight: 500;
+    color: gray;
+    height: 120px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+ }
+ /* .inputs > img{
+    position: absolute;
+    left: 42vw;
+    margin-top: 4rem;
+ } */
+ .tri{
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+ }
+ .up{
+    display: flex;
+    justify-content: center;
+ }
+ .down{
+   display: flex;
+   justify-content: center;
+ }
+ #rock{
+    position: relative;
+    bottom: 320px;
+    right: 80px;
+ }
+ #paper{
+    position: relative;
+    bottom: 320px;
+    left: 60px;
+ }
+ #scissor{
+    position: relative;
+    bottom: 260px;
+ }
+ .ac-btn{
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   cursor: pointer;
+ }
+ .ac-rock{
+   border: 16px solid #0074b6;
+ }
+ .ac-rock:hover{
+   border: 8px solid #0074b6;
+ }
+ .ac-paper{
+   border: 16px solid #ffa943;
+ }
+ .ac-paper:hover{
+   border: 8px solid #ffa943;
+ }
+ .ac-scissor{
+   border: 16px solid #bd00ff;
+ }
+ .ac-scissor:hover{
+   border: 8px solid #bd00ff;
+ }
+ .icon{
+   height: 65px;
+   width: 65px;
+ }
+ /* .icon:hover{
+   height: 60px;
+   width: 60px;
+ } */
+ .rc-same{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 150px;
+   background-color: white;
+   border-radius: 100%;
+   border: 16px solid #0074b6;
+ }
+ .pp-same{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 150px;
+   background-color: white;
+   border-radius: 100%;
+   border: 16px solid #ffa943;
+ }
+ .ss-same{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 150px;
+   background-color: white;
+   border-radius: 100%;
+   border: 16px solid #bd00ff;
+ }
+ /* .rc-same img{
+   height: 30px;
+   width: 40px;
+ } */
+ .heads{
+   font-size: 20px;
+ }
+ .con button{
+  text-align: center;
+   text-transform: uppercase;
+   background-color: white;
+   color: black;
+   border: 2px solid #ffff;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 0.6rem 1.5rem;
+   width: 180px;
+   height: 50px;
+   border-radius: 8px;
+   cursor: pointer;
+   margin-top: 2rem;
+ }
+ .con button:hover{
+   background-color: #ffff;
+   color: #6b6b6b;
+   transition: all 0.2s ease-in-out;
+ }
+ #l-font{
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+ }
+#font{
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+ }
+.con{
+  text-align: center;
+}
+/* ===================== */
+.results{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.res{
+    display: flex;
+    /* border: #004429 1px solid; */
+    width: 800px;
+    margin-left: 27%;
+    margin-top: 1%;
+    align-items: center;
+    /* margin: 0px 550px; */
+    justify-content: space-between;
+    color: white;
+}
+.rule{
+   /* float: right;
+   margin-right: 4rem;
+   position: relative;
+   top: 290px; */
+   display: flex;
+   justify-content: flex-end;
+   position: fixed;
+   bottom: 20px;
+   right: 35px;
+}
+.button:hover {
+   background-color: #ffff;
+   color: #6b6b6b;
+   transition: all 0.2s ease-in-out;
+}
+.button {
+   background-color: transparent;
+   color: #ffff;
+   border: 2px solid #ffff;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 0.6rem 1.5rem;
+   border-radius: 8px;
+   cursor: pointer;
+   margin-left: 2rem;
+}
+#next{
+   display: none;
+}
+#rulesBox {
+   width: 310px;
+   height: 360px;
+   color: white;
+   background-color: #004429;
+   border: 10px solid white;
+   border-radius: 15px;
+   /* padding: 5px; */
+   position: fixed;
+   top: 68%;
+   left: 88%;
+   transform: translate(-50%, -50%);
+   display: none;   
+}
+.hidden h2{
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  bottom: 80px;
+}
+.hidden ul li{
+  font-size: 14px;
+  position: relative;
+  bottom: 80px;
+  letter-spacing: 1px;
+  list-style-type: none;
+}.yellow-square {
+  list-style-type: none; /* Remove the default bullet point */
+  margin-left: -20px; 
+}
+.yellow-square:before {
+  content: "■"; 
+  color: yellow; 
+  font-size: 20px; 
+  margin-right: 5px; 
+}
+#closeButton {
+   position: relative;
+   border: 10px solid white;
+   border-radius: 100%;
+   background-color: red;
+   bottom: 40px;
+   left: 280px;
+   cursor: pointer;
+   font-size: 18px;
+   line-height: 1;
+}
+#closeButton img{
+  padding: 10px;
+}

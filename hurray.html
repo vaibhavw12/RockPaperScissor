@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HURRAY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        background-color:  #8cc461;
+    }
+    .star{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        height: 300px;
+    }
+    .trophy{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 200px;
+    }
+    .hurray{
+        position: relative;
+        bottom: 150px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 100px;
+        letter-spacing: 8px;
+        font-weight: 800;
+    }
+    .won{
+        position: relative;
+        bottom: 150px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        letter-spacing: 8px; 
+    }
+    .button:hover {
+   background-color: #ffff;
+   color: #6b6b6b;
+   transition: all 0.2s ease-in-out;
+    }
+    .button {
+    background-color: transparent;
+    color: #ffff;
+    border: 2px solid #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+    .play{
+        position: relative;
+        bottom: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+</style>
+<body>
+    <div class="star">
+        <img src="Group 5.png" alt="star">
+    </div>
+    <div class="trophy">
+        <img src="Vector.png" alt="star">
+    </div>
+    <div class="hurray">
+        HURRAY!!
+    </div>
+    <div class="won">
+        <h1>YOU WON THE GAME</h1>
+    </div>
+    <div class="play">
+        <button class="button" onclick="playAgain()">PLAY AGAIN</button>
+    </div>
+    <div class="rule">
+        <button class="button" onclick=display()>RULES</button>
+        
+        <div id="rulesBox" class="hidden">
+            <button id="closeButton" onclick="removeit()"><img src="X.png" alt="close"></button>
+            
+            <h2>Game Rules</h2>
+            <ul>
+                <li class="yellow-square">Rock beats scissors, scissors beat paper, and paper beats rock.</li><br>
+                <li class="yellow-square">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br>
+                <li class="yellow-square">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+                <li class="yellow-square">If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

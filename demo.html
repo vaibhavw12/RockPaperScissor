@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="text">
+            <div>ROCK</div>
+            <div>PAPER</div>
+            <div>SCISSORS</div>
+        </div>
+        <div class="scores">
+            <div class="comp score">
+                COMPUTER<br> SCORE
+            </div>
+            <div class="user score">
+                YOUR<br> SCORE
+                
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------- -->
+    <div>
+        <div class="equals">
+            <div class="eq" style="display: none;">YOU PICKED</div>
+            <div class="eq" style="display: none;">PC PICKED</div>
+        </div>
+        <div class="res">
+            <div  class="eq-r rel"  style="display: none;">
+                 <img class="u-res" src="icon-rock.svg" alt="rock">
+            </div>
+            <div class="eq-r rel" style="display: none;">
+                TIE UP<br>
+                <button onclick="replay()">replay</button>
+            </div>
+            <div class="eq-r rel" style="display: none;">
+                <img class="c-res" src="icon-rock.svg" alt="paper">
+            </div>
+            <!--  -->
+            <div  class="eq-p rel"  style="display: none;">
+                <img class="u-res" src="icon-paper.svg" alt="rock">
+           </div>
+           <div class="eq-p rel" style="display: none;">
+               TIE UP<br>
+               <button onclick="replay()">replay</button>
+           </div>
+           <div class="eq-p rel" style="display: none;">
+               <img class="c-res" src="icon-paper.svg" alt="paper">
+           </div>
+           <!--  -->
+           <div  class="eq-s rel"  style="display: none;">
+            <img class="u-res" src="icon-scissors.svg" alt="rock">
+       </div>
+       <div class="eq-s rel" style="display: none;">
+           TIE UP<br>
+           <button onclick="replay()">replay</button>
+       </div>
+       <div class="eq-s rel" style="display: none;">
+           <img class="c-res" src="icon-scissors.svg" alt="paper">
+       </div>
+        </div>
+    </div>
+    <!-- ------------------------------------ -->
+    <div class="equals">
+        <div class="eq-rp" style="display: none;">YOU PICKED</div>
+        <div class="eq-rp" style="display: none;">PC PICKED</div>
+    </div>
+    <div class="res">
+    <div  class="eq-rp rel"  style="display: none;">
+        <img class="u-res" src="icon-rock.svg" alt="rock">
+   </div>
+   <div class="eq-rp rel" style="display: none;">
+       <h3>YOU LOST</h3>
+       AGAINST PC<br>
+       <button onclick="play()">PLAY AGAIN</button>
+   </div>
+   <div class="eq-rp rel" style="display: none;">
+       <img class="c-res" src="icon-paper.svg" alt="paper">
+   </div>
+   </div>
+    <!-- ------------------------------------- -->
+    <div class="inputs">
+        <img class="action" src="bg-triangle.svg" alt="tri">
+        <div class="actions">
+            <div class="up">
+                <div id="rock" class="action act1">
+                    <button onclick="press('rock')"><img src="icon-rock.svg" alt="rock"></button>
+                    </div>
+                <div id="paper" class="action act2">
+                    <button onclick="press('paper')" ><img src="icon-paper.svg" alt="paper"></button>
+                </div>
+            </div>
+            <div class="down">
+                <div id="scissor" class="action act3">
+                    <button onclick="press('scissor')" ><img src="icon-scissors.svg" alt="scissor"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

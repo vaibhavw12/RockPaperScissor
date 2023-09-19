@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="text">
+            <div>ROCK</div>
+            <div>PAPER</div>
+            <div>SCISSORS</div>
+        </div>
+        <div class="scores">
+            <div class="comp score">
+                COMPUTER<br> SCORE <br>
+                <span id="comp"></span>
+            </div>
+            <div class="user score">
+                YOUR<br> SCORE <br>
+                <span id="user"></span>    
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------- -->
+    <div>
+        <div class="results">
+            <div class="con heads" style="display: none;">YOU PICKED</div>
+            <div class="con heads" style="display: none;">PC PICKED</div>
+        </div>
+        <div class="res">
+            <div  class="con"  style="display: none;">
+                <img class="icon ac-btn ac-rock" src="icon-rock.svg" alt="rock">
+            </div>
+            <div class="con" style="display: none;">
+                TIE UP<br>
+                <button onclick="replay()">replay</button>
+            </div>
+            <div class="con" style="display: none;">
+                <img class="icon ac-btn ac-rock" src="icon-rock.svg" alt="paper">
+            </div>
+        </div>
+    </div>
+<!-- -------------------------------------------- -->
+    <div class="inputs">
+        <div class="tri">
+            <img class="action" src="bg-triangle.svg" alt="tri">
+        </div>
+        
+        <div class="actions">
+            <div class="up">
+                <div id="rock" class="action act1">
+                    <button class="ac-btn ac-rock" onclick="press('rock')"><img class="icon" src="icon-rock.svg" alt="rock"></button>
+                    </div>
+                <div id="paper" class="action act2">
+                    <button class="ac-btn ac-paper" onclick="press('paper')" ><img  class="icon" src="icon-paper.svg" alt="paper"></button>
+                </div>
+            </div>
+            <div class="down">
+                <div id="scissor" class="action act3">
+                    <button class="ac-btn ac-scissor" onclick="press('scissor')" ><img class="icon" src="icon-scissors.svg" alt="scissor"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------- -->
+    <div class="rule">
+        <button class="button" id="next" onclick="next()">NEXT</button>
+        <button class="button" id="rules" onclick=display()>RULES</button>
+     <!-- ------------------------------------- -->
+    
+        <div id="rulesBox" class="hidden">
+            <button id="closeButton" onclick="removeit()"><img src="X.png" alt="close"></button>
+            
+            <h2>Game Rules</h2>
+            <ul>
+                <li class="yellow-square">Rock beats scissors, scissors beat paper, and paper beats rock.</li><br>
+                <li class="yellow-square">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br>
+                <li class="yellow-square">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+                <li class="yellow-square">If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
